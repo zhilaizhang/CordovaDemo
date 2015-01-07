@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="io.cordova.helloCordova" version="2.0.0">
+    <access origin="*" subdomains="true" />
+    <feature name="CordovaPlugins">
+        <param name="android-package" value="com.example.zhangzhilai.cordovademo.CordovaPlugins" />
+    </feature>
+</widget>

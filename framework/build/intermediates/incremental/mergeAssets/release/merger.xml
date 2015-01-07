@@ -1,18 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="2" >
-
-    <dataSet config="main" >
-        <source path="/Users/zhangzhilai/Documents/workspace_studio/CordovaDemo/framework/assets" >
-            <file
-                name="www/cordova.js"
-                path="/Users/zhangzhilai/Documents/workspace_studio/CordovaDemo/framework/assets/www/cordova.js" />
-            <file
-                name="www/index.html"
-                path="/Users/zhangzhilai/Documents/workspace_studio/CordovaDemo/framework/assets/www/index.html" />
-        </source>
-    </dataSet>
-    <dataSet config="release" >
-        <source path="/Users/zhangzhilai/Documents/workspace_studio/CordovaDemo/framework/src/release/assets" />
-    </dataSet>
-
-</merger>
+<merger version="3"><dataSet config="main"><source path="/Users/zhangzhilai/Documents/workspace_studio/cordovaTest/CordovaDemo/framework/assets"><file name="www/cordova.js" path="/Users/zhangzhilai/Documents/workspace_studio/cordovaTest/CordovaDemo/framework/assets/www/cordova.js"/><file name="www/index.html" path="/Users/zhangzhilai/Documents/workspace_studio/cordovaTest/CordovaDemo/framework/assets/www/index.html"/></source></dataSet><dataSet config="release"><source path="/Users/zhangzhilai/Documents/workspace_studio/cordovaTest/CordovaDemo/framework/src/release/assets"/></dataSet></merger>
