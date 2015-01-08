@@ -21,6 +21,7 @@ public class MyActivity extends CordovaActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.init();
         setContentView(R.layout.activity_my);
         mContext = MyActivity.this;
         findviews();
@@ -36,7 +37,7 @@ public class MyActivity extends CordovaActivity {
         mWebSetting = mCordovaWebView.getSettings();
         String originUA = mWebSetting.getUserAgentString();
         String userAgent = "HJApp/Android/" + DeviceUtils.getSystemVersion() + "/tlk_st/"
-                + DeviceUtils.getVersionName(this) + "/cordova/" + originUA;
+                + DeviceUtils.getVersionName(this) + "/cordova/";
 
         mWebSetting.setUserAgentString(userAgent);
         mWebSetting.setJavaScriptEnabled(true);
@@ -49,6 +50,6 @@ public class MyActivity extends CordovaActivity {
             }
         };
         mCordovaWebView.setWebViewClient(mWebViewClient);
-        mCordovaWebView.loadUrl("http://ms.hujiang.com/st/app/topic/161885288910/");
+        mCordovaWebView.loadUrl("file:///android_asset/www/index.html");
     }
 }
